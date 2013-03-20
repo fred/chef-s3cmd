@@ -4,7 +4,7 @@ s3cmd Cookbook
 This chef cookbook installs the latest s3cmd from the master branch at github.
 It downloads the tarball of master: https://github.com/s3tools/s3cmd/archive/master.tar.gz
 
-The latest version of S3CMD from github seems to work better than the old version included in Ubuntu and centos, but be aware it's alpha version and UNTESTED, don't rely on this version for production servers.
+The latest version of S3CMD from github seems to work better than the old version included in Ubuntu and centos, but be aware it's alpha version and not bug free, don't rely on this version for production servers.
 
 https://github.com/fred/chef-s3cmd
 
