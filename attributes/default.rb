@@ -13,6 +13,7 @@ default['s3cmd']['gpg_passphrase'] = 'averylongsupersecretpassphrase'
 default['s3cmd']['secret_key'] = 'your-secret-key'
 default['s3cmd']['access_key'] = 'your-access-key'
 default['s3cmd']['bucket_location'] = 'US'
+default['s3cmd']['https'] = false
 
 default['s3cmd']['user'] = 'deploy'
 default['s3cmd']['home'] = '/home/deploy'
