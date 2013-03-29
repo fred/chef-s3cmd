@@ -7,7 +7,7 @@ default_mime_type = binary/octet-stream
 delete_removed = False
 dry_run = False
 encoding = ANSI_X3.4-1968
-encrypt = False
+encrypt = <%= @encrypt ? 'True' : 'False' %>
 follow_symlinks = False
 force = False
 get_continue = False
@@ -34,5 +34,5 @@ simpledb_host = sdb.amazonaws.com
 skip_existing = False
 socket_timeout = 10
 urlencoding_mode = normal
-use_https = <% if @https %>True<% else %>False<% end %>
+use_https = <%= @https ? 'True' : 'False' %>
 verbosity = WARNING

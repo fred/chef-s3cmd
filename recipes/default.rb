@@ -26,14 +26,17 @@ bash "install-s3cmd" do
   EOH
 end
 
-template "#{node['s3cmd']['home']}/.s3cfg" do
+home_folder = `echo ~#{node['s3cmd']['user']}`.strip
+
+template "#{home_folder}/.s3cfg" do
   source "s3cfg.erb"
   variables(
     access_key: node['s3cmd']['access_key'],
     secret_key: node['s3cmd']['secret_key'],
     gpg_passphrase: node['s3cmd']['gpg_passphrase'],
     bucket_location: node['s3cmd']['bucket_location'],
-    https: node['s3cmd']['https']
+    https: node['s3cmd']['https'],
+    encrypt: node['s3cmd']['encrypt']
   )
   owner node['s3cmd']['user']
   group node['s3cmd']['user']
