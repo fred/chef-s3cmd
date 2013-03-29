@@ -32,7 +32,8 @@ template "#{node['s3cmd']['home']}/.s3cfg" do
     access_key: node['s3cmd']['access_key'],
     secret_key: node['s3cmd']['secret_key'],
     gpg_passphrase: node['s3cmd']['gpg_passphrase'],
-    bucket_location: node['s3cmd']['bucket_location']
+    bucket_location: node['s3cmd']['bucket_location'],
+    https: node['s3cmd']['https']
   )
   owner node['s3cmd']['user']
   group node['s3cmd']['user']
