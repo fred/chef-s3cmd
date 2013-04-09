@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: s3cmd
-# Recipe:: default #
+# Recipe:: default
 # Frederico Araujo (fred.the.master@gmail.com)
 # https://github.com/fred/chef-s3cmd
 #
