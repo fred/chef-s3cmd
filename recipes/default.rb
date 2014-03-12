@@ -8,6 +8,7 @@
 package "python"
 package "python-setuptools"
 package "python-distutils-extra"
+package "python-dateutil"
 
 
 remote_file "#{Chef::Config[:file_cache_path]}/master.tar.gz" do
