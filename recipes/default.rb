@@ -13,6 +13,7 @@ case node['s3cmd']['install_method']
     include_recipe 's3cmd::install_from_package'
   else
     Chef::Application.fatal!("There install method #{node['s3cmd']['install_method']} is not provided; please use one of: 'source', 'package'.")
+end
 
 # configure s3cmd
 include_recipe 's3cmd::configure'

@@ -5,6 +5,12 @@
 # https://github.com/fred/chef-s3cmd
 #
 
+if node['s3cmd']['config_dir']
+  home_folder = node['s3cmd']['config_dir']
+else
+  home_folder = node['etc']['passwd'][node['s3cmd']['user']]['dir']
+end
+
 template "#{home_folder}/.s3cfg" do
   source "s3cfg.erb"
   variables(

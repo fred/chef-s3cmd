@@ -25,9 +25,3 @@ bash "install-s3cmd" do
   python setup.py install
   EOH
 end
-
-if node['s3cmd']['config_dir']
-  home_folder = node['s3cmd']['config_dir']
-else
-  home_folder = node['etc']['passwd'][node['s3cmd']['user']]['dir']
-end
