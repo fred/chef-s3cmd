@@ -32,7 +32,7 @@ secret_key = <%= @secret_key %>
 send_chunk = 4096
 simpledb_host = sdb.amazonaws.com
 skip_existing = False
-socket_timeout = 10
+socket_timeout = 100
 urlencoding_mode = normal
 use_https = <%= @https ? 'True' : 'False' %>
 verbosity = WARNING
