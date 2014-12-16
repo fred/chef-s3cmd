@@ -9,6 +9,7 @@ package "python"
 package "python-setuptools"
 package "python-distutils-extra"
 package "python-dateutil"
+package "python-requests"
 
 package "s3cmd"
 
