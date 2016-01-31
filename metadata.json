@@ -8,6 +8,7 @@
   "platforms": {
   },
   "dependencies": {
+    "chef-vault": "~> 1.3.2"
   },
   "recommendations": {
   },
