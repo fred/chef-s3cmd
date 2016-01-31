@@ -4,6 +4,7 @@ driver:
 
 provisioner:
   name: chef_zero
+  data_bags_path: test/fixtures/data_bags
 
 platforms:
   - name: ubuntu-14.04
@@ -17,3 +18,7 @@ suites:
       s3cmd:
         user: vagrant
         config_dir: /home/vagrant
+        data_bag: {
+          name: 'aws_creds',
+          item: 's3_user'
+        }

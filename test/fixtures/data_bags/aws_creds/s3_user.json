@@ -1,0 +1,12 @@
+{
+  "id": "s3_user",
+  "_default": {
+    "username": "your_user",
+    "access_key": "insert_your_access_key_here",
+    "secret_key": "insert_your_secret_key_here",
+    "https": true,
+    "encrypt": false,
+    "gpg_passphrase": "",
+    "bucket_location": "EU"
+  }
+}

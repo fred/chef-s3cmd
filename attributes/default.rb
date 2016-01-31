@@ -15,3 +15,7 @@ default['s3cmd']['bucket_location'] = 'US'
 default['s3cmd']['encrypt'] = false
 default['s3cmd']['https'] = false
 default['s3cmd']['user'] = 'ubuntu' # User *must* exist, otherwise don't expect this to work ; )
+# default['s3cmd']['data_bag'] = {
+#   name: 'aws_creds',
+#   item: 's3_user'
+# }
