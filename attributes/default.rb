@@ -6,7 +6,6 @@
 # https://github.com/fred/chef-s3cmd
 #
 
-
 # Url to download the tarball from latest master branch from github.
 default['s3cmd']['url'] = 'https://github.com/s3tools/s3cmd/archive/master.tar.gz'
 default['s3cmd']['gpg_passphrase'] = 'abcdefgabcdefgabcdefgabcdefg'

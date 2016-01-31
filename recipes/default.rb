@@ -5,13 +5,13 @@
 # https://github.com/fred/chef-s3cmd
 #
 
-package "python"
-package "python-setuptools"
-package "python-distutils-extra"
-package "python-dateutil"
-package "python-requests"
+package 'python'
+package 'python-setuptools'
+package 'python-distutils-extra'
+package 'python-dateutil'
+package 'python-requests'
 
-package "s3cmd"
+package 's3cmd'
 
 if node['s3cmd']['config_dir']
   home_folder = node['s3cmd']['config_dir']
@@ -20,14 +20,14 @@ else
 end
 
 template "#{home_folder}/.s3cfg" do
-  source "s3cfg.erb"
+  source 's3cfg.erb'
   variables(
-    :access_key =>  node['s3cmd']['access_key'],
-    :secret_key =>  node['s3cmd']['secret_key'],
-    :gpg_passphrase =>  node['s3cmd']['gpg_passphrase'],
-    :bucket_location =>  node['s3cmd']['bucket_location'],
-    :https =>  node['s3cmd']['https'],
-    :encrypt =>  node['s3cmd']['encrypt']
+    access_key: node['s3cmd']['access_key'],
+    secret_key: node['s3cmd']['secret_key'],
+    gpg_passphrase: node['s3cmd']['gpg_passphrase'],
+    bucket_location: node['s3cmd']['bucket_location'],
+    https: node['s3cmd']['https'],
+    encrypt: node['s3cmd']['encrypt']
   )
   owner node['s3cmd']['user']
   group node['s3cmd']['user']
