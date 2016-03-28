@@ -16,3 +16,4 @@ default['s3cmd']['bucket_location'] = 'US'
 default['s3cmd']['encrypt'] = false
 default['s3cmd']['https'] = false
 default['s3cmd']['user'] = 'ubuntu'
+default['s3cmd']['config_mode'] = 0600
