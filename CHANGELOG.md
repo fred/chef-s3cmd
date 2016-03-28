@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of s3cmd.
 
+## 0.2.2
+
+* Config mode extensible via attributes.
+
 ## 0.2.1
 
 * Ruby 1.8 compatibility

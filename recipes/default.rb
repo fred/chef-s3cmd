@@ -31,5 +31,5 @@ template "#{home_folder}/.s3cfg" do
   )
   owner node['s3cmd']['user']
   group node['s3cmd']['user']
-  mode 0600
+  mode node['s3cmd']['config_mode']
 end
